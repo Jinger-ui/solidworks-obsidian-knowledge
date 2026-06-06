@@ -54,14 +54,14 @@ updated: 2026-06-06
 ## 强化学习理论基础（Princeton ECE524 · Chi Jin）
 
 - [[BV1r6cjeCEkW-总览]]（22 分 P，约 28h28m）
-  - MDP 与动态规划：[[P01-马尔科夫决策过程基础MDP]] → [[P03-规划Planning]]
-  - 概率工具：[[P04-集中不等式ConcentrationInequalities]] · [[P05-鞅MartingaleConcentration]]
-  - 生成模型：[[P06-生成模型GenerativeModels]]
-  - 探索与 Regret：[[P07-探索Exploration]] → [[P11-MDP下界LowerBoundsforMDP]]
-  - 离线 RL：[[P12-离线强化学习OfflineRL]]
-  - 函数逼近：[[P13-大状态空间中的强化学习RLinLargeStateSpace]] → [[P17-一般函数逼近中的探索ExplorationinGeneralFunctionApproximation]]
-  - 博弈与 MARL：[[P18-多智能体强化学习MultiagentReinforcementLearning]] → [[P20-多人一般和博弈MultiplayerGeneral-SumGames]]
-  - POMDP：[[P21-部分可观测强化学习1PartiallyObservableReinforcementLearningI]] · [[P22-部分可观测强化学习2PartiallyObservableReinforcementLearningII]]
+  - MDP 与动态规划：[[P01-马尔科夫决策过程基础]] → [[P03-规划]]
+  - 概率工具：[[P04-集中不等式]] · [[P05-鞅]]
+  - 生成模型：[[P06-生成模型]]
+  - 探索与 Regret：[[P07-探索]] → [[P11-MDP下界]]
+  - 离线 RL：[[P12-离线强化学习]]
+  - 函数逼近：[[P13-大状态空间中的强化学习]] → [[P17-一般函数逼近中的探索]]
+  - 博弈与 MARL：[[P18-多智能体强化学习]] → [[P20-多人一般和博弈]]
+  - POMDP：[[P21-部分可观测强化学习1I]] · [[P22-部分可观测强化学习2II]]
   - [[思维导图]]
 
 ## 进度
