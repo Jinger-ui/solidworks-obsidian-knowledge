@@ -38,6 +38,9 @@ id_rsa*
 # Node
 node_modules/
 
+# Local tool install scratch
+.tools/
+
 # OS / editor junk
 Thumbs.db
 Desktop.ini
