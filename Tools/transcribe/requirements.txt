@@ -1,0 +1,5 @@
+# 逐字转写流水线依赖（推荐 Python 3.10+）
+# 安装：python -m pip install -r Tools/transcribe/requirements.txt
+
+faster-whisper>=1.0.0
+yt-dlp>=2024.1.0

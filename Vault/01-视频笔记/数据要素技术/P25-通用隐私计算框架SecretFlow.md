@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 4594
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P25 通用隐私计算框架 SecretFlow
@@ -280,6 +282,9 @@ SecretFlow 像**隐私计算的 Android 系统**：YACL/SPU 是芯片驱动，Ku
 
 - ← **联邦学习FL**（[[P24-联邦学习FL]]）
 - → **隐私计算密码库 YACL**（[[P26-隐私计算密码库YACL]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV1ser5BDESU -Part 25` 补充。
 
 ## 来源说明
 

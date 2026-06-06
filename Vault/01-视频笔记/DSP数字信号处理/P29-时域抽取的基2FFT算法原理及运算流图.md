@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 2532
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P29 4-1时域抽取的基2FFT算法原理及运算流图
@@ -197,6 +199,9 @@ FFT 像**分治求和**：把 N 点 DFT 拆成两个 N/2 点，复杂度从 N² 
 
 - ← **3-3频率域采样定理**（[[P28-频率域采样定理]]）
 - → **4-2频域抽取的基2-FFT算法原理及运算流图（修改重传）**（[[P30-频域抽取的基2-FFT算法原理及运算流图]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV127411M7BU -Part 29` 补充。
 
 ## 来源说明
 

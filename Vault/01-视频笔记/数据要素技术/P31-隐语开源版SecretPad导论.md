@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 3171
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P31 隐语开源版SecretPad导论
@@ -215,6 +217,9 @@ SecretFlow 像**隐私计算的 Android 系统**：YACL/SPU 是芯片驱动，Ku
 
 - ← **基于K8S的跨域隐私计算应用编排框架Kuscia**（[[P30-基于K8S的跨域隐私计算应用编排框架Kuscia]]）
 - → **KusciaAPI的相关概念和场景实践-正式版**（[[P32-KusciaAPI的相关概念和场景实践-正式版]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV1ser5BDESU -Part 31` 补充。
 
 ## 来源说明
 

@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 2869
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P11 深入理解TEE OSes
@@ -203,6 +205,9 @@ flowchart TD
 
 - ← **密态底座-密态胶囊**（[[P10-密态底座-密态胶囊]]）
 - → **基于可信硬件的隐私计算框架TrustFlow**（[[P12-基于可信硬件的隐私计算框架TrustFlow]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV1ser5BDESU -Part 11` 补充。
 
 ## 来源说明
 

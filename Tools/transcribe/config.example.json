@@ -1,0 +1,15 @@
+{
+  "bvid": "BV1ser5BDESU",
+  "parts": "1",
+  "engine": "auto",
+  "whisper_model": "small",
+  "whisper_model_dir": "D:/solidworks/Downloads/whisper-models",
+  "transcript_dir": "D:/solidworks/Downloads/transcripts",
+  "vault_dir": "D:/solidworks/Vault/01-视频笔记",
+  "audio_cache_dir": "D:/solidworks/Downloads/transcripts/audio",
+  "vault_courses": {
+    "BV1ser5BDESU": "数据要素技术",
+    "BV127411M7BU": "DSP数字信号处理",
+    "BV1Yo5D6TEVk": "SolidWorks-AI自动化"
+  }
+}

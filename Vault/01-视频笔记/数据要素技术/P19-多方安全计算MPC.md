@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 3074
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P19 多方安全计算MPC
@@ -224,6 +226,9 @@ sequenceDiagram
 
 - ← **可信数据空间-连接器**（[[P18-可信数据空间-连接器]]）
 - → **全同态加密基本原理和应用**（[[P20-全同态加密基本原理和应用]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV1ser5BDESU -Part 19` 补充。
 
 ## 来源说明
 

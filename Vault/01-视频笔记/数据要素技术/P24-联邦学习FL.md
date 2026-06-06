@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 2903
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P24 联邦学习FL
@@ -218,6 +220,9 @@ mindmap
 
 - ← **差分隐私基础理论与核心概念**（[[P23-差分隐私基础理论与核心概念]]）
 - → **通用隐私计算框架 SecretFlow**（[[P25-通用隐私计算框架SecretFlow]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV1ser5BDESU -Part 24` 补充。
 
 ## 来源说明
 

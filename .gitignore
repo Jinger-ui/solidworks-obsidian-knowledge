@@ -18,6 +18,11 @@ Tools/**/*.bin
 Tools/**/*.onnx
 Tools/**/*.pt
 Tools/**/*.pth
+Downloads/whisper-models/
+Downloads/transcripts/audio/
+Downloads/transcripts/**/*.wav
+Downloads/transcripts/**/*.m4a
+Downloads/transcripts/**/*.mp3
 
 # Python
 __pycache__/

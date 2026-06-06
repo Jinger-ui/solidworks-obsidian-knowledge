@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 3078
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P29 安全协作查询语言 SCQL
@@ -210,6 +212,9 @@ SecretFlow 像**隐私计算的 Android 系统**：YACL/SPU 是芯片驱动，Ku
 
 - ← **隐私集合求交 PSI**（[[P28-隐私集合求交PSI]]）
 - → **基于K8S的跨域隐私计算应用编排框架Kuscia**（[[P30-基于K8S的跨域隐私计算应用编排框架Kuscia]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV1ser5BDESU -Part 29` 补充。
 
 ## 来源说明
 

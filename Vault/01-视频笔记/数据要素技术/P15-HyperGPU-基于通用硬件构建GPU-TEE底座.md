@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 3079
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P15 HyperGPU：基于通用硬件构建GPU-TEE底座
@@ -212,6 +214,9 @@ flowchart TD
 
 - ← **密态大数据安全方案与实践**（[[P14-密态大数据安全方案与实践]]）
 - → **机密容器的安全设计及落地实践**（[[P16-机密容器的安全设计及落地实践]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV1ser5BDESU -Part 15` 补充。
 
 ## 来源说明
 

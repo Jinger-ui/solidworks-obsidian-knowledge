@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 3033
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P27 密态计算单元 SPU
@@ -213,6 +215,9 @@ SecretFlow 像**隐私计算的 Android 系统**：YACL/SPU 是芯片驱动，Ku
 
 - ← **隐私计算密码库 YACL**（[[P26-隐私计算密码库YACL]]）
 - → **隐私集合求交 PSI**（[[P28-隐私集合求交PSI]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV1ser5BDESU -Part 27` 补充。
 
 ## 来源说明
 

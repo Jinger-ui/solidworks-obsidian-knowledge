@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 2623
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P08 1-7离散LTI系统的数学模型（差分方程）
@@ -199,6 +201,9 @@ flowchart LR
 
 - ← **1-6系统的因果性和稳定性（最清楚的离散系统的因果稳定性判断剖析）**（[[P07-系统的因果性和稳定性]]）
 - → **1-8模拟信号数字化（采样的数学过程）**（[[P09-模拟信号数字化]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV127411M7BU -Part 8` 补充。
 
 ## 来源说明
 

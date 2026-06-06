@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 3248
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P30 基于K8S的跨域隐私计算应用编排框架Kuscia
@@ -216,6 +218,9 @@ SecretFlow 像**隐私计算的 Android 系统**：YACL/SPU 是芯片驱动，Ku
 
 - ← **安全协作查询语言 SCQL**（[[P29-安全协作查询语言SCQL]]）
 - → **隐语开源版SecretPad导论**（[[P31-隐语开源版SecretPad导论]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV1ser5BDESU -Part 30` 补充。
 
 ## 来源说明
 

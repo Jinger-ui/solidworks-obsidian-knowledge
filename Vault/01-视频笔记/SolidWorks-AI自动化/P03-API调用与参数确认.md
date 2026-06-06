@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 3675
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P03 API 调用与参数确认
@@ -244,6 +246,9 @@ API 建模像**用遥控器开车**：你发指令（方法调用），车（Sol
 
 - ← **P02_SolidWorks启动与自动化准备_带字幕配音**（[[P02-环境自动化准备]]）
 - → **P04_基础零件建模生成_带字幕配音**（[[P04-参数化零件建模]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV1Yo5D6TEVk -Part 3` 补充。
 
 ## 来源说明
 

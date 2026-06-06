@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 2494
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P30 4-2频域抽取的基2-FFT算法原理及运算流图（修改重传）
@@ -200,6 +202,9 @@ FFT 像**分治求和**：把 N 点 DFT 拆成两个 N/2 点，复杂度从 N² 
 
 - ← **4-1时域抽取的基2FFT算法原理及运算流图**（[[P29-时域抽取的基2FFT算法原理及运算流图]]）
 - → **5-1离散时间系统的模拟及基本原理**（[[P31-离散时间系统的模拟及基本原理]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV127411M7BU -Part 30` 补充。
 
 ## 来源说明
 

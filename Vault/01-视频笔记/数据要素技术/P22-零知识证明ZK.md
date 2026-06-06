@@ -12,6 +12,8 @@ status: 教程级已增强
 source_type: 教程级知识点增强
 detail_level: 教程级
 word_count: 2969
+transcript_engine: 
+transcript_status: 待转写
 ---
 
 # P22 零知识证明ZK
@@ -214,6 +216,9 @@ mindmap
 
 - ← **安全求交和匿踪查询**（[[P21-安全求交和匿踪查询]]）
 - → **差分隐私基础理论与核心概念**（[[P23-差分隐私基础理论与核心概念]]）
+
+## 逐字转写
+> 状态：待转写。运行 `Tools/transcribe/transcribe.ps1 -Bvid BV1ser5BDESU -Part 22` 补充。
 
 ## 来源说明
 
