@@ -1,0 +1,421 @@
+﻿{
+    "code":  0,
+    "message":  "OK",
+    "ttl":  1,
+    "data":  {
+                 "bvid":  "BV1Yo5D6TEVk",
+                 "aid":  116571603214104,
+                 "videos":  6,
+                 "tid":  172,
+                 "tid_v2":  2096,
+                 "tname":  "",
+                 "tname_v2":  "",
+                 "copyright":  3,
+                 "pic":  "http://i0.hdslb.com/bfs/archive/9e2d102f6a9b9fb092bf7b88be4195fff0d10eec.jpg",
+                 "title":  "AI读取机械二维图纸并驱动SolidWorks建模装配完整流程",
+                 "pubdate":  1778741839,
+                 "ctime":  1778741839,
+                 "desc":  "这是完整教程分P版，共6个部分，记录AI从机械二维图纸阅读开始，到调用SolidWorks完成零件建模、保存和装配尝试的全过程。\nP01：图纸阅读与建模思路\nP02：SolidWorks启动与自动化准备\nP03：API调试与流程确认\nP04：基础零件建模生成\nP05：复杂零件与标准件完善\nP06：装配尝试与保存收尾\n如果想快速看结果，可以先看我前面发布的精华版；如果想完整了解每一步，可以按P01到P06顺序观看。",
+                 "desc_v2":  [
+                                 {
+                                     "raw_text":  "这是完整教程分P版，共6个部分，记录AI从机械二维图纸阅读开始，到调用SolidWorks完成零件建模、保存和装配尝试的全过程。\nP01：图纸阅读与建模思路\nP02：SolidWorks启动与自动化准备\nP03：API调试与流程确认\nP04：基础零件建模生成\nP05：复杂零件与标准件完善\nP06：装配尝试与保存收尾\n如果想快速看结果，可以先看我前面发布的精华版；如果想完整了解每一步，可以按P01到P06顺序观看。",
+                                     "type":  1,
+                                     "biz_id":  0
+                                 }
+                             ],
+                 "state":  0,
+                 "duration":  11441,
+                 "rights":  {
+                                "bp":  0,
+                                "elec":  0,
+                                "download":  1,
+                                "movie":  0,
+                                "pay":  0,
+                                "hd5":  0,
+                                "no_reprint":  0,
+                                "autoplay":  1,
+                                "ugc_pay":  0,
+                                "is_cooperation":  0,
+                                "ugc_pay_preview":  0,
+                                "no_background":  0,
+                                "clean_mode":  0,
+                                "is_stein_gate":  0,
+                                "is_360":  0,
+                                "no_share":  0,
+                                "arc_pay":  0,
+                                "free_watch":  0
+                            },
+                 "owner":  {
+                               "mid":  1131789457,
+                               "name":  "夜刀凉宫忧x",
+                               "face":  "https://i1.hdslb.com/bfs/face/e93a348cd4ed4974ac60135bd0647abb7bdf4632.jpg"
+                           },
+                 "stat":  {
+                              "aid":  116571603214104,
+                              "view":  1915,
+                              "danmaku":  0,
+                              "reply":  3,
+                              "favorite":  81,
+                              "coin":  9,
+                              "share":  10,
+                              "now_rank":  0,
+                              "his_rank":  0,
+                              "like":  26,
+                              "dislike":  0,
+                              "evaluation":  "",
+                              "vt":  0
+                          },
+                 "argue_info":  {
+                                    "argue_msg":  "个人观点，仅供参考",
+                                    "argue_type":  0,
+                                    "argue_link":  ""
+                                },
+                 "dynamic":  "",
+                 "cid":  38323226016,
+                 "dimension":  {
+                                   "width":  1920,
+                                   "height":  1080,
+                                   "rotate":  0
+                               },
+                 "season_id":  8119301,
+                 "premiere":  null,
+                 "teenage_mode":  1,
+                 "is_chargeable_season":  false,
+                 "is_story":  false,
+                 "is_upower_exclusive":  false,
+                 "is_upower_play":  false,
+                 "is_upower_preview":  false,
+                 "enable_vt":  0,
+                 "vt_display":  "",
+                 "is_upower_exclusive_with_qa":  false,
+                 "no_cache":  false,
+                 "pages":  [
+                               {
+                                   "cid":  38323226016,
+                                   "page":  1,
+                                   "from":  "vupload",
+                                   "part":  "P01_图纸阅读与建模思路_带字幕配音",
+                                   "duration":  1501,
+                                   "vid":  "",
+                                   "weblink":  "",
+                                   "dimension":  {
+                                                     "width":  1920,
+                                                     "height":  1080,
+                                                     "rotate":  0
+                                                 },
+                                   "first_frame":  "http://i1.hdslb.com/bfs/storyff/_00001g404nzlpmqdr2ieb0zgnt4q3cb_firsti.jpg",
+                                   "ctime":  1778741839
+                               },
+                               {
+                                   "cid":  38323290585,
+                                   "page":  2,
+                                   "from":  "vupload",
+                                   "part":  "P02_SolidWorks启动与自动化准备_带字幕配音",
+                                   "duration":  2703,
+                                   "vid":  "",
+                                   "weblink":  "",
+                                   "dimension":  {
+                                                     "width":  1920,
+                                                     "height":  1080,
+                                                     "rotate":  0
+                                                 },
+                                   "first_frame":  "http://i1.hdslb.com/bfs/storyff/_00002rwjbtsad9etj2pw6fvayjpztib_firsti.jpg",
+                                   "ctime":  1778741839
+                               },
+                               {
+                                   "cid":  38323356909,
+                                   "page":  3,
+                                   "from":  "vupload",
+                                   "part":  "P03_API调试与流程确认_带字幕配音",
+                                   "duration":  1803,
+                                   "vid":  "",
+                                   "weblink":  "",
+                                   "dimension":  {
+                                                     "width":  1920,
+                                                     "height":  1080,
+                                                     "rotate":  0
+                                                 },
+                                   "first_frame":  "http://i0.hdslb.com/bfs/storyff/_00002315rpoc95ui42bzc2ypisvfltb_firsti.jpg",
+                                   "ctime":  1778741839
+                               },
+                               {
+                                   "cid":  38323357244,
+                                   "page":  4,
+                                   "from":  "vupload",
+                                   "part":  "P04_基础零件建模生成_带字幕配音",
+                                   "duration":  2404,
+                                   "vid":  "",
+                                   "weblink":  "",
+                                   "dimension":  {
+                                                     "width":  1920,
+                                                     "height":  1080,
+                                                     "rotate":  0
+                                                 },
+                                   "first_frame":  "http://i2.hdslb.com/bfs/storyff/_00002m87g5bxwcq0z2h7nxdemfz5y5b_firsti.jpg",
+                                   "ctime":  1778741839
+                               },
+                               {
+                                   "cid":  38323357377,
+                                   "page":  5,
+                                   "from":  "vupload",
+                                   "part":  "P05_复杂零件与标准件完善_带字幕配音",
+                                   "duration":  1802,
+                                   "vid":  "",
+                                   "weblink":  "",
+                                   "dimension":  {
+                                                     "width":  1920,
+                                                     "height":  1080,
+                                                     "rotate":  0
+                                                 },
+                                   "first_frame":  "http://i2.hdslb.com/bfs/storyff/_00002lvln73nvl7c71ypbss6et7x9ab_firsti.jpg",
+                                   "ctime":  1778741839
+                               },
+                               {
+                                   "cid":  38323357487,
+                                   "page":  6,
+                                   "from":  "vupload",
+                                   "part":  "P06_装配尝试与保存收尾_带字幕配音",
+                                   "duration":  1228,
+                                   "vid":  "",
+                                   "weblink":  "",
+                                   "dimension":  {
+                                                     "width":  1920,
+                                                     "height":  1080,
+                                                     "rotate":  0
+                                                 },
+                                   "first_frame":  "http://i0.hdslb.com/bfs/storyff/_00003evp20auqbe6z26my7pwn19v2rb_firsti.jpg",
+                                   "ctime":  1778741839
+                               }
+                           ],
+                 "subtitle":  {
+                                  "allow_submit":  false,
+                                  "list":  [
+
+                                           ]
+                              },
+                 "ugc_season":  {
+                                    "id":  8119301,
+                                    "title":  "AI读取机械二维图纸并驱动SolidWorks",
+                                    "cover":  "https://i0.hdslb.com/bfs/templar/york-static/viedeo_material_default.png",
+                                    "mid":  1131789457,
+                                    "intro":  "",
+                                    "sign_state":  0,
+                                    "attribute":  140,
+                                    "sections":  [
+                                                     {
+                                                         "season_id":  8119301,
+                                                         "id":  9022475,
+                                                         "title":  "正片",
+                                                         "type":  1,
+                                                         "episodes":  [
+                                                                          {
+                                                                              "season_id":  8119301,
+                                                                              "section_id":  9022475,
+                                                                              "id":  195320576,
+                                                                              "aid":  116571603214104,
+                                                                              "cid":  38323226016,
+                                                                              "title":  "AI读取机械二维图纸并驱动SolidWorks建模装配完整流程",
+                                                                              "attribute":  0,
+                                                                              "arc":  {
+                                                                                          "aid":  116571603214104,
+                                                                                          "videos":  0,
+                                                                                          "type_id":  0,
+                                                                                          "type_name":  "",
+                                                                                          "copyright":  0,
+                                                                                          "pic":  "http://i0.hdslb.com/bfs/archive/9e2d102f6a9b9fb092bf7b88be4195fff0d10eec.jpg",
+                                                                                          "title":  "AI读取机械二维图纸并驱动SolidWorks建模装配完整流程",
+                                                                                          "pubdate":  1778741839,
+                                                                                          "ctime":  1778741839,
+                                                                                          "desc":  "",
+                                                                                          "state":  0,
+                                                                                          "duration":  11441,
+                                                                                          "rights":  {
+                                                                                                         "bp":  0,
+                                                                                                         "elec":  0,
+                                                                                                         "download":  0,
+                                                                                                         "movie":  0,
+                                                                                                         "pay":  0,
+                                                                                                         "hd5":  0,
+                                                                                                         "no_reprint":  0,
+                                                                                                         "autoplay":  0,
+                                                                                                         "ugc_pay":  0,
+                                                                                                         "is_cooperation":  0,
+                                                                                                         "ugc_pay_preview":  0,
+                                                                                                         "arc_pay":  0,
+                                                                                                         "free_watch":  0
+                                                                                                     },
+                                                                                          "author":  {
+                                                                                                         "mid":  1131789457,
+                                                                                                         "name":  "夜刀凉宫忧x",
+                                                                                                         "face":  "https://i1.hdslb.com/bfs/face/e93a348cd4ed4974ac60135bd0647abb7bdf4632.jpg"
+                                                                                                     },
+                                                                                          "stat":  {
+                                                                                                       "aid":  116571603214104,
+                                                                                                       "view":  1915,
+                                                                                                       "danmaku":  0,
+                                                                                                       "reply":  3,
+                                                                                                       "fav":  81,
+                                                                                                       "coin":  9,
+                                                                                                       "share":  10,
+                                                                                                       "now_rank":  0,
+                                                                                                       "his_rank":  0,
+                                                                                                       "like":  26,
+                                                                                                       "dislike":  0,
+                                                                                                       "evaluation":  "",
+                                                                                                       "argue_msg":  "",
+                                                                                                       "vt":  0,
+                                                                                                       "vv":  1915
+                                                                                                   },
+                                                                                          "dynamic":  "",
+                                                                                          "dimension":  {
+                                                                                                            "width":  0,
+                                                                                                            "height":  0,
+                                                                                                            "rotate":  0
+                                                                                                        },
+                                                                                          "desc_v2":  null,
+                                                                                          "is_chargeable_season":  false,
+                                                                                          "is_blooper":  false,
+                                                                                          "enable_vt":  0,
+                                                                                          "vt_display":  "",
+                                                                                          "type_id_v2":  0,
+                                                                                          "type_name_v2":  "",
+                                                                                          "is_lesson_video":  0
+                                                                                      },
+                                                                              "page":  {
+                                                                                           "cid":  38323226016,
+                                                                                           "page":  1,
+                                                                                           "from":  "vupload",
+                                                                                           "part":  "P01_图纸阅读与建模思路_带字幕配音",
+                                                                                           "duration":  1501,
+                                                                                           "vid":  "",
+                                                                                           "weblink":  "",
+                                                                                           "dimension":  {
+                                                                                                             "width":  1920,
+                                                                                                             "height":  1080,
+                                                                                                             "rotate":  0
+                                                                                                         }
+                                                                                       },
+                                                                              "bvid":  "BV1Yo5D6TEVk",
+                                                                              "pages":  [
+                                                                                            {
+                                                                                                "cid":  38323226016,
+                                                                                                "page":  1,
+                                                                                                "from":  "vupload",
+                                                                                                "part":  "P01_图纸阅读与建模思路_带字幕配音",
+                                                                                                "duration":  1501,
+                                                                                                "vid":  "",
+                                                                                                "weblink":  "",
+                                                                                                "dimension":  {
+                                                                                                                  "width":  1920,
+                                                                                                                  "height":  1080,
+                                                                                                                  "rotate":  0
+                                                                                                              }
+                                                                                            },
+                                                                                            {
+                                                                                                "cid":  38323290585,
+                                                                                                "page":  2,
+                                                                                                "from":  "vupload",
+                                                                                                "part":  "P02_SolidWorks启动与自动化准备_带字幕配音",
+                                                                                                "duration":  2703,
+                                                                                                "vid":  "",
+                                                                                                "weblink":  "",
+                                                                                                "dimension":  {
+                                                                                                                  "width":  1920,
+                                                                                                                  "height":  1080,
+                                                                                                                  "rotate":  0
+                                                                                                              }
+                                                                                            },
+                                                                                            {
+                                                                                                "cid":  38323356909,
+                                                                                                "page":  3,
+                                                                                                "from":  "vupload",
+                                                                                                "part":  "P03_API调试与流程确认_带字幕配音",
+                                                                                                "duration":  1803,
+                                                                                                "vid":  "",
+                                                                                                "weblink":  "",
+                                                                                                "dimension":  {
+                                                                                                                  "width":  1920,
+                                                                                                                  "height":  1080,
+                                                                                                                  "rotate":  0
+                                                                                                              }
+                                                                                            },
+                                                                                            {
+                                                                                                "cid":  38323357244,
+                                                                                                "page":  4,
+                                                                                                "from":  "vupload",
+                                                                                                "part":  "P04_基础零件建模生成_带字幕配音",
+                                                                                                "duration":  2404,
+                                                                                                "vid":  "",
+                                                                                                "weblink":  "",
+                                                                                                "dimension":  {
+                                                                                                                  "width":  1920,
+                                                                                                                  "height":  1080,
+                                                                                                                  "rotate":  0
+                                                                                                              }
+                                                                                            },
+                                                                                            {
+                                                                                                "cid":  38323357377,
+                                                                                                "page":  5,
+                                                                                                "from":  "vupload",
+                                                                                                "part":  "P05_复杂零件与标准件完善_带字幕配音",
+                                                                                                "duration":  1802,
+                                                                                                "vid":  "",
+                                                                                                "weblink":  "",
+                                                                                                "dimension":  {
+                                                                                                                  "width":  1920,
+                                                                                                                  "height":  1080,
+                                                                                                                  "rotate":  0
+                                                                                                              }
+                                                                                            },
+                                                                                            {
+                                                                                                "cid":  38323357487,
+                                                                                                "page":  6,
+                                                                                                "from":  "vupload",
+                                                                                                "part":  "P06_装配尝试与保存收尾_带字幕配音",
+                                                                                                "duration":  1228,
+                                                                                                "vid":  "",
+                                                                                                "weblink":  "",
+                                                                                                "dimension":  {
+                                                                                                                  "width":  1920,
+                                                                                                                  "height":  1080,
+                                                                                                                  "rotate":  0
+                                                                                                              }
+                                                                                            }
+                                                                                        ]
+                                                                          }
+                                                                      ]
+                                                     }
+                                                 ],
+                                    "stat":  {
+                                                 "season_id":  8119301,
+                                                 "view":  1914,
+                                                 "danmaku":  0,
+                                                 "reply":  3,
+                                                 "fav":  81,
+                                                 "coin":  9,
+                                                 "share":  10,
+                                                 "now_rank":  0,
+                                                 "his_rank":  0,
+                                                 "like":  26,
+                                                 "vt":  0,
+                                                 "vv":  0
+                                             },
+                                    "ep_count":  1,
+                                    "season_type":  1,
+                                    "is_pay_season":  false,
+                                    "enable_vt":  0
+                                },
+                 "is_season_display":  true,
+                 "user_garb":  {
+                                   "url_image_ani_cut":  ""
+                               },
+                 "honor_reply":  {
+
+                                 },
+                 "like_icon":  "",
+                 "need_jump_bv":  false,
+                 "disable_show_up_info":  false,
+                 "is_story_play":  0,
+                 "is_view_self":  false
+             }
+}

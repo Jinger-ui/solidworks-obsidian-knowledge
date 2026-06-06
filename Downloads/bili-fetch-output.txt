@@ -1,0 +1,122 @@
+﻿{
+  "bvid": "BV1Yo5D6TEVk",
+  "aid": 116571603214104,
+  "title": "AI璇诲彇鏈烘浜岀淮鍥剧焊骞堕┍鍔⊿olidWorks寤烘ā瑁呴厤瀹屾暣娴佺▼",
+  "desc": "杩欐槸瀹屾暣鏁欑▼鍒哖鐗堬紝鍏?涓儴鍒嗭紝璁板綍AI浠庢満姊颁簩缁村浘绾搁槄璇诲紑濮嬶紝鍒拌皟鐢⊿olidWorks瀹屾垚闆朵欢寤烘ā銆佷繚瀛樺拰瑁呴厤灏濊瘯鐨勫叏杩囩▼銆俓nP01锛氬浘绾搁槄璇讳笌寤烘ā鎬濊矾\nP02锛歋olidWorks鍚姩涓庤嚜鍔ㄥ寲鍑嗗\nP03锛欰PI璋冭瘯涓庢祦绋嬬‘璁nP04锛氬熀纭€闆朵欢寤烘ā鐢熸垚\nP05锛氬鏉傞浂浠朵笌鏍囧噯浠跺畬鍠刓nP06锛氳閰嶅皾璇曚笌淇濆瓨鏀跺熬\n濡傛灉鎯冲揩閫熺湅缁撴灉锛屽彲浠ュ厛鐪嬫垜鍓嶉潰鍙戝竷鐨勭簿鍗庣増锛涘鏋滄兂瀹屾暣浜嗚В姣忎竴姝ワ紝鍙互鎸塒01鍒癙06椤哄簭瑙傜湅銆?,
+  "up": "澶滃垁鍑夊蹇",
+  "up_mid": 1131789457,
+  "pubdate": 1778741839,
+  "total_duration_sec": 11441,
+  "total_duration_fmt": "190鍒?1绉?,
+  "stat": {
+    "aid": 116571603214104,
+    "view": 1915,
+    "danmaku": 0,
+    "reply": 3,
+    "favorite": 81,
+    "coin": 9,
+    "share": 10,
+    "now_rank": 0,
+    "his_rank": 0,
+    "like": 26,
+    "dislike": 0,
+    "evaluation": "",
+    "vt": 0
+  },
+  "tags": [
+    "澶у",
+    "瀛︿範",
+    "鏁欑▼",
+    "鏈烘鍒跺浘 浜岀淮鍥剧焊 涓夌淮寤烘ā 鏈烘璁捐",
+    "鎬濊矾",
+    "SolidWorks",
+    "鍥剧焊",
+    "瀛︿範蹇冨緱",
+    "AI鍒涗綔鑰?
+  ],
+  "season": "AI璇诲彇鏈烘浜岀淮鍥剧焊骞堕┍鍔⊿olidWorks",
+  "parts": [
+    {
+      "page": 1,
+      "cid": 38323226016,
+      "part": "P01_鍥剧焊闃呰涓庡缓妯℃€濊矾_甯﹀瓧骞曢厤闊?,
+      "duration_sec": 1501,
+      "duration_fmt": "25鍒?1绉?,
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/_00001g404nzlpmqdr2ieb0zgnt4q3cb_firsti.jpg",
+      "cover_local": "BV1Yo5D6TEVk-P01-cover.jpg",
+      "subtitle_count": 0,
+      "need_login_subtitle": true,
+      "subtitles": []
+    },
+    {
+      "page": 2,
+      "cid": 38323290585,
+      "part": "P02_SolidWorks鍚姩涓庤嚜鍔ㄥ寲鍑嗗_甯﹀瓧骞曢厤闊?,
+      "duration_sec": 2703,
+      "duration_fmt": "45鍒?3绉?,
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/_00002rwjbtsad9etj2pw6fvayjpztib_firsti.jpg",
+      "cover_local": "BV1Yo5D6TEVk-P02-cover.jpg",
+      "subtitle_count": 0,
+      "need_login_subtitle": true,
+      "subtitles": []
+    },
+    {
+      "page": 3,
+      "cid": 38323356909,
+      "part": "P03_API璋冭瘯涓庢祦绋嬬‘璁甯﹀瓧骞曢厤闊?,
+      "duration_sec": 1803,
+      "duration_fmt": "30鍒?3绉?,
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/_00002315rpoc95ui42bzc2ypisvfltb_firsti.jpg",
+      "cover_local": "BV1Yo5D6TEVk-P03-cover.jpg",
+      "subtitle_count": 0,
+      "need_login_subtitle": true,
+      "subtitles": []
+    },
+    {
+      "page": 4,
+      "cid": 38323357244,
+      "part": "P04_鍩虹闆朵欢寤烘ā鐢熸垚_甯﹀瓧骞曢厤闊?,
+      "duration_sec": 2404,
+      "duration_fmt": "40鍒?4绉?,
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/_00002m87g5bxwcq0z2h7nxdemfz5y5b_firsti.jpg",
+      "cover_local": "BV1Yo5D6TEVk-P04-cover.jpg",
+      "subtitle_count": 0,
+      "need_login_subtitle": true,
+      "subtitles": []
+    },
+    {
+      "page": 5,
+      "cid": 38323357377,
+      "part": "P05_澶嶆潅闆朵欢涓庢爣鍑嗕欢瀹屽杽_甯﹀瓧骞曢厤闊?,
+      "duration_sec": 1802,
+      "duration_fmt": "30鍒?2绉?,
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/_00002lvln73nvl7c71ypbss6et7x9ab_firsti.jpg",
+      "cover_local": "BV1Yo5D6TEVk-P05-cover.jpg",
+      "subtitle_count": 0,
+      "need_login_subtitle": true,
+      "subtitles": []
+    },
+    {
+      "page": 6,
+      "cid": 38323357487,
+      "part": "P06_瑁呴厤灏濊瘯涓庝繚瀛樻敹灏綺甯﹀瓧骞曢厤闊?,
+      "duration_sec": 1228,
+      "duration_fmt": "20鍒?8绉?,
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/_00003evp20auqbe6z26my7pwn19v2rb_firsti.jpg",
+      "cover_local": "BV1Yo5D6TEVk-P06-cover.jpg",
+      "subtitle_count": 0,
+      "need_login_subtitle": true,
+      "subtitles": []
+    }
+  ],
+  "fetched_at": "2026-06-06T09:18:46.831Z",
+  "subtitle_status": "鏃犲鎸傚瓧骞曡建锛堣棰戜负鍐呭祵閰嶉煶瀛楀箷锛孉PI 杩斿洖绌哄垪琛級"
+}
+node : 
+所在位置 行:1 字符: 1
++ node "D:\solidworks\Tools\bili-fetch\fetch-bilibili.js" "BV1Yo5D6TEVk ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Saved: D:\solidworks\Downloads\bili-fetch\BV1Yo5D6TEVk-full.json

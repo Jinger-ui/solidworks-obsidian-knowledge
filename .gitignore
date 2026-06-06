@@ -1,0 +1,51 @@
+# Obsidian — keep core config; ignore local workspace state
+Vault/.obsidian/workspace.json
+
+# Large installers / binaries
+Tools/Obsidian-*.exe
+Tools/BBDown.exe
+Tools/**/*.exe
+Downloads/Obsidian-*.exe
+Downloads/*.exe
+Downloads/*.zip
+
+# Tool caches and ML models
+Tools/**/cache/
+Tools/**/models/
+Tools/**/*.bin
+Tools/**/*.onnx
+Tools/**/*.pt
+Tools/**/*.pth
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+credentials.json
+*credentials*
+*.pem
+id_rsa*
+
+# Node
+node_modules/
+
+# OS / editor junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+# Embedded Python runtime (large)
+Tools/python311/
+
+# Nested git repo inside Tools
+Tools/bilibili-obsidian-notes/.git/
+
+# Embedded Python runtime (local tool dependency)
+Tools/python311/
+

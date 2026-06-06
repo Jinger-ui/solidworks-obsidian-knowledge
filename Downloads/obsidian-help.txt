@@ -1,0 +1,2 @@
+
+Command line interface is not enabled. Please turn it on in Settings > General > Advanced.
