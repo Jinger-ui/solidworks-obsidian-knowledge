@@ -10,6 +10,8 @@ const JSON_FILE = path.join(__dirname, '..', `${BV}-full.json`);
 const OUT_DIR = path.join(__dirname, '..', '..', 'Vault', '01-视频笔记', '数据要素技术');
 const DATE = '2026-06-06';
 
+const { buildTutorialBody, countChars } = require('./lib/tutorial-framework');
+const tutorialDetail = require('./content/data-element-tutorial-detail');
 const supplement = require('./content/data-element-supplement');
 const supplement2 = require('./content/data-element-supplement2');
 const supplement3 = require('./content/data-element-supplement3');
@@ -21,7 +23,7 @@ const knowledge = Object.assign(
   require('./content/data-element-de-infra'),
   require('./content/data-element-de-cases')
 );
-// 合并补充深化，使每篇达 800+ 字
+// 合并纲要级补充
 for (const [page, extra] of Object.entries(supplement)) {
   const p = Number(page);
   if (knowledge[p]) knowledge[p] = knowledge[p] + '\n\n' + extra;
@@ -152,10 +154,6 @@ function getTerms(part, page) {
   return [...common, ['模块', theme.name]];
 }
 
-function countChars(text) {
-  return text.replace(/\s/g, '').length;
-}
-
 const fileNames = data.parts.map((p) => sanitizeFilename(p.part, p.page));
 let totalChars = 0;
 const wordCounts = [];
@@ -171,31 +169,46 @@ data.parts.forEach((p, idx) => {
   ].filter(Boolean).join(' | ');
 
   const theme = getThemeGroup(p.page);
-  const content = knowledge[p.page];
-  if (!content) {
+  const baseContent = knowledge[p.page];
+  if (!baseContent) {
     console.warn(`Missing knowledge for P${p.page}`);
     return;
   }
+  const shortTitle = p.part.replace(/^\d+_/, '');
+  const prevTitle = idx > 0 ? data.parts[idx - 1].part.replace(/^\d+_/, '') : null;
+  const nextTitle = idx < data.parts.length - 1 ? data.parts[idx + 1].part.replace(/^\d+_/, '') : null;
+  const content = buildTutorialBody({
+    seriesName: '数据要素技术',
+    page: p.page,
+    shortTitle,
+    themeName: theme.name,
+    prevTitle,
+    nextTitle,
+    examTip: getExamTips(p.page),
+    baseContent,
+    detail: tutorialDetail[p.page] || {},
+    durationFmt: p.duration_fmt,
+  });
   const wc = countChars(content);
   totalChars += wc;
   wordCounts.push(wc);
 
   const terms = getTerms(p.part, p.page);
   const examTip = getExamTips(p.page);
-  const shortTitle = p.part.replace(/^\d+_/, '');
 
   const md = `---
 title: "P${String(p.page).padStart(2, '0')} ${shortTitle}"
 source: "https://www.bilibili.com/video/${BV}?p=${p.page}"
 up: "${data.up}"
-tags: [数据要素, 隐私计算, 视频笔记, ${theme.id}, SecretFlow]
+tags: [数据要素, 隐私计算, 视频笔记, ${theme.id}, SecretFlow, 教程级]
 duration: "${p.duration_fmt.replace('分', 'm').replace('秒', 's')}"
 cid: ${p.cid}
 created: ${DATE}
 updated: ${DATE}
-tool: "bilibili-obsidian-notes 工作流 + 知识点增强脚本"
-status: 已增强
-source_type: 知识点增强
+tool: "bilibili-obsidian-notes 工作流 + 教程级增强脚本"
+status: 教程级已增强
+source_type: 教程级知识点增强
+detail_level: 教程级
 word_count: ${wc}
 ---
 
@@ -219,12 +232,10 @@ ${nav}
 1. **本 P 主题**：${shortTitle}
 2. **模块定位**：${theme.name}
 3. **考试/实践侧重**：${examTip}
-4. **学习建议**：先读下方详细笔记建立框架，再对照视频与 SecretFlow 文档动手实践
-5. **与视频关系**：笔记覆盖本 P 核心知识点，演示细节以视频为准
+4. **笔记层级**：教程级（约 ${wc} 字），含速览、图解、场景 Walkthrough、自测题
+5. **学习建议**：先通读「3 分钟速览」与「图解」，再读「详细讲解」；动手项见 Checklist
 
-## 详细笔记
-
-> 以下内容基于数据要素流通与隐私计算技术体系撰写，对应 B 站分 P「${shortTitle}」。**非 UP 逐字转写**；实操步骤请对照视频与官方文档。
+> 以下内容基于数据要素流通与隐私计算技术体系撰写，对应 B 站分 P「${shortTitle}」。**非 UP 逐字转写**；不看视频也可建立框架，看视频可对照「与视频对照表」深化。
 
 ${content}
 
@@ -243,7 +254,7 @@ ${next ? `- → **${data.parts[idx + 1].part.replace(/^\d+_/, '')}**（[[${next}
 
 - ✅ B 站官方元数据（\`Tools/${BV}-full.json\`）
 - ✅ 分 P 首帧封面（\`Tools/bili-fetch/fetch-bilibili.js\`）
-- ✅ **知识点增强**：数据要素流通技术实质内容（约 ${wc} 字，${DATE}）
+- ✅ **教程级增强**：含图解/Mermaid、场景 Walkthrough、自测题（约 ${wc} 字，${DATE}）
 - ⏳ 逐字转写：B 站 API 无外挂字幕轨；可选 Whisper/BiliNote 后续补充
 
 ## 关键截图
@@ -261,7 +272,7 @@ if (fs.existsSync(overviewPath)) {
   overview = overview.replace(/status: 已生成/, 'status: 已增强');
   overview = overview.replace(
     /> 当前笔记基于 \*\*官方简介 \+ 分 P 结构\*\* 整理，待知识点增强脚本补充 800–1500 字\/篇实质内容。/,
-    `> 各分 P 笔记已补充 **数据要素流通技术知识点实质内容**（约 800–1500 字/篇，${DATE}）。B 站 API 无外挂字幕，逐字稿可后续用 Whisper/BiliNote 补充。`
+    `> 各分 P 笔记已升级为 **教程级**（约 1500–3000 字/篇，含 Mermaid、Walkthrough、自测题，${DATE}）。B 站 API 无外挂字幕，逐字稿可后续用 Whisper/BiliNote 补充。`
   );
   overview = overview.replace(/updated: \d{4}-\d{2}-\d{2}/, `updated: ${DATE}`);
 
@@ -323,7 +334,7 @@ mindmap
       [[${fileNames[38]}]]
 \`\`\`
 
-> 各模块已按知识点增强（${DATE}，合计约 ${totalChars} 字，均篇 ${Math.round(totalChars / wordCounts.length)} 字）。封面见 \`06-资源附件/video-notes-images/\`。
+> 各模块已按**教程级**增强（${DATE}，合计约 ${totalChars} 字，均篇 ${Math.round(totalChars / wordCounts.length)} 字）。封面见 \`06-资源附件/video-notes-images/\`。
 `;
 fs.writeFileSync(mindmapPath, mindmapContent, 'utf8');
 
