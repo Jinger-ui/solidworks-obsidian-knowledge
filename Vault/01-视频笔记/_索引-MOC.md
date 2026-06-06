@@ -41,7 +41,38 @@ updated: 2026-06-06
   - 行业案例：[[P39-案例-新冠重病预测]] → [[P47-多方联合建模助力普惠信贷]]
   - [[思维导图]]
 
+## 联邦学习与差分隐私（Proof-Trivial）
+
+- [[BV1q4421A72h-总览]]（15 分 P，约 11h04m）
+  - 基础入门：[[P01-FederatedLearning简介]] → [[P03-IntroductiontoFederatedLearning]]
+  - 工程专题：[[P04-联邦学习中的高效通信优化方法]] · [[P05-可扩展且保护隐私的联邦主成分分析]] · [[P06-带有“正式用户级”差分隐私保证的联邦学习]]
+  - Simons 工作坊：[[P07-SimonsInstitute联邦学习&协作学习]] → [[P12-SimonsInstitute联邦学习&协作学习]]
+  - 论文深读：[[P13-Umich在线学习与查分隐私之间的联系]] · [[P14-ICML_22PeterRichtarik联邦学习中本地梯度步骤可证明导致通信加速]] · [[P15-NeurIPS_21AnOnlineRiemannianPCAforStochasticC]]
+  - [[思维导图]]
+  - 交叉：[[BV1ser5BDESU-总览]] P23 差分隐私 · P24 联邦学习
+
+## 强化学习理论基础（Princeton ECE524 · Chi Jin）
+
+- [[BV1r6cjeCEkW-总览]]（22 分 P，约 28h28m）
+  - MDP 与动态规划：[[P01-马尔科夫决策过程基础MDP]] → [[P03-规划Planning]]
+  - 概率工具：[[P04-集中不等式ConcentrationInequalities]] · [[P05-鞅MartingaleConcentration]]
+  - 生成模型：[[P06-生成模型GenerativeModels]]
+  - 探索与 Regret：[[P07-探索Exploration]] → [[P11-MDP下界LowerBoundsforMDP]]
+  - 离线 RL：[[P12-离线强化学习OfflineRL]]
+  - 函数逼近：[[P13-大状态空间中的强化学习RLinLargeStateSpace]] → [[P17-一般函数逼近中的探索ExplorationinGeneralFunctionApproximation]]
+  - 博弈与 MARL：[[P18-多智能体强化学习MultiagentReinforcementLearning]] → [[P20-多人一般和博弈MultiplayerGeneral-SumGames]]
+  - POMDP：[[P21-部分可观测强化学习1PartiallyObservableReinforcementLearningI]] · [[P22-部分可观测强化学习2PartiallyObservableReinforcementLearningII]]
+  - [[思维导图]]
+
 ## 进度
+
+### 强化学习理论基础
+
+- [x] 拉取 B 站 API 元数据（`Tools/BV1r6cjeCEkW-full.json`）
+- [x] P01–P22 写入教程级笔记（status: 教程级已增强，约 2500–3500 字/篇）
+- [x] 更新总览与思维导图
+- [x] 分 P 首帧封面（22 张，见 `06-资源附件/video-notes-images/BV1r6cjeCEkW-P*-cover.jpg`）
+- [ ] Whisper 逐字转写（约 28h 音频，需 Python 3.9+、ffmpeg）
 
 ### SolidWorks
 
@@ -68,3 +99,11 @@ updated: 2026-06-06
 - [x] 更新总览与思维导图
 - [x] 分 P 封面（47 张，见 `06-资源附件/video-notes-images/BV1ser5BDESU-P*-cover.jpg`）
 - [ ] Whisper 逐字转写（约 28h 音频，需 Python 3.9+、ffmpeg）
+
+### 联邦学习与差分隐私
+
+- [x] 拉取 B 站 API 元数据（`Tools/BV1q4421A72h-full.json`）
+- [x] P01–P15 教程级笔记（`enhance-fl-dp-notes.js`，约 2500–3500 字/篇）
+- [x] 更新总览与思维导图
+- [x] 分 P 封面（15 张，`BV1q4421A72h-P*-cover.jpg`）
+- [ ] Whisper 逐字转写（约 11h 音频）
