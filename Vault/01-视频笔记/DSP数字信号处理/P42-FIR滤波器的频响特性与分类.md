@@ -10,7 +10,7 @@ updated: 2026-06-06
 tool: "bilibili-obsidian-notes 工作流 + 知识点增强脚本"
 status: 已增强
 source_type: 知识点增强
-word_count: 588
+word_count: 780
 ---
 
 # P42 7-2FIR滤波器的频响特性与分类
@@ -79,6 +79,14 @@ Type I（$N$ 奇，偶对称）或 Type II；Type III 在 $\omega=\pi$ 为零。
 - 由 $h(n)$ 判断类型
 - $H(e^{j\omega})$ 线性相位形式
 
+### 8. 幅频与零极点
+
+线性相位 FIR 的 $H(e^{j\omega})=e^{-j\omega(N-1)/2}H_r(\omega)$，$H_r(\omega)$ 全为实。零点成对镜像对称于单位圆（实系数）。设计时检查 Type 约束避免 $\omega=0$ 强制零点。
+
+### 9. 滤波器选型表
+
+低通 Type I；高通 Type I（$N$ 奇）；带通 Type I/III；希尔伯特变换 Type III/IV。
+
 ## 关键术语
 
 | 术语 | 说明 |
@@ -97,7 +105,7 @@ Type I（$N$ 奇，偶对称）或 Type II；Type III 在 $\omega=\pi$ 为零。
 
 - ✅ B 站官方标题、简介、分 P 元数据（`api.bilibili.com`，见 `Tools/BV127411M7BU-full.json`）
 - ✅ 分 P 首帧封面（`Tools/bili-fetch/fetch-bilibili.js`）
-- ✅ **知识点增强**：西电教材大纲实质内容（约 588 字，2026-06-06）
+- ✅ **知识点增强**：西电教材大纲实质内容（约 780 字，2026-06-06）
 - ⏳ 逐字转写：B 站 API 无外挂字幕轨（内嵌配音字幕）；可选 Whisper/BiliNote 后续补充
 
 ## 关键截图

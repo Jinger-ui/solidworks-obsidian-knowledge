@@ -10,6 +10,7 @@ const JSON_FILE = path.join(__dirname, '..', `${BV}-full.json`);
 const OUT_DIR = path.join(__dirname, '..', '..', 'Vault', '01-视频笔记', 'DSP数字信号处理');
 const DATE = '2026-06-06';
 
+const supplement = require('./content/dsp-supplement');
 const knowledge = Object.assign(
   {},
   require('./content/dsp-ch1'),
@@ -20,6 +21,10 @@ const knowledge = Object.assign(
   require('./content/dsp-ch6'),
   require('./content/dsp-ch7')
 );
+for (const [page, extra] of Object.entries(supplement)) {
+  const p = Number(page);
+  if (knowledge[p]) knowledge[p] = knowledge[p] + '\n\n' + extra;
+}
 
 const data = JSON.parse(fs.readFileSync(JSON_FILE, 'utf8'));
 

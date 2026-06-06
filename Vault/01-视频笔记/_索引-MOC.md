@@ -47,7 +47,7 @@ updated: 2026-06-06
 
 - [x] 拉取 B 站 API 元数据（`Tools/bilibili_api_data.json`）
 - [x] 安装 bilibili-obsidian-notes + Node 抓取脚本（`Tools/bili-fetch/`）
-- [x] P01–P06 写入结构化笔记（元数据增强，status: 已生成）
+- [x] P01–P06 写入结构化笔记（知识点增强，status: 已增强，约 1500–2200 字/篇）
 - [x] 更新总览与思维导图
 - [x] 分 P 首帧封面截图（6 张，见 `06-资源附件/video-notes-images/`）
 - [ ] Whisper 逐字转写（需 Python 3.9+、ffmpeg、约 3h 音频处理）
@@ -56,7 +56,7 @@ updated: 2026-06-06
 ### DSP
 
 - [x] 拉取 B 站 API 元数据（`Tools/BV127411M7BU-full.json`）
-- [x] P01–P44 写入结构化笔记（元数据增强，status: 已生成）
+- [x] P01–P44 写入结构化笔记（知识点增强，status: 已增强，≥800 字/篇）
 - [x] 更新总览与思维导图
 - [x] 分 P 封面（44 张，见 `06-资源附件/video-notes-images/BV127411M7BU-P*-cover.jpg`）
 - [ ] Whisper 逐字转写（约 9h 音频，需 Python 3.9+、ffmpeg）

@@ -10,7 +10,7 @@ updated: 2026-06-06
 tool: "bilibili-obsidian-notes 工作流 + 知识点增强脚本"
 status: 已增强
 source_type: 知识点增强
-word_count: 592
+word_count: 840
 ---
 
 # P37 双线性变换法设计IIR滤波器
@@ -81,6 +81,14 @@ $$\Omega_c=2\tan(\pi/4)=2\text{ rad/s}$$
 - 理解无混叠优点
 - 完整设计步骤（指标→模拟→双线性→$H(z)$）
 
+### 8. 双线性设计算例
+
+数字低通 $\omega_c=0.3\pi$，$T=1$：$\Omega_c=2\tan(0.15\pi)$。设计模拟 $H_a(s)$ 后 $s=\frac{2(1-z^{-1})}{1+z^{-1}}$ 代入。验证 $|H(e^{j0.3\pi})|\approx -3$ dB。
+
+### 9. 频率扭曲图示
+
+$\omega=0\to\Omega=0$；$\omega=\pi\to\Omega=\infty$。整个 $(0,\pi)$ 压缩到有限 $\Omega$，故必须预畸变，否则截止点不准。
+
 ## 关键术语
 
 | 术语 | 说明 |
@@ -98,7 +106,7 @@ $$\Omega_c=2\tan(\pi/4)=2\text{ rad/s}$$
 
 - ✅ B 站官方标题、简介、分 P 元数据（`api.bilibili.com`，见 `Tools/BV127411M7BU-full.json`）
 - ✅ 分 P 首帧封面（`Tools/bili-fetch/fetch-bilibili.js`）
-- ✅ **知识点增强**：西电教材大纲实质内容（约 592 字，2026-06-06）
+- ✅ **知识点增强**：西电教材大纲实质内容（约 840 字，2026-06-06）
 - ⏳ 逐字转写：B 站 API 无外挂字幕轨（内嵌配音字幕）；可选 Whisper/BiliNote 后续补充
 
 ## 关键截图

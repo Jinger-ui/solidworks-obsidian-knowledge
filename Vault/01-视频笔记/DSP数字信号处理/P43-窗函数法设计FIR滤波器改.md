@@ -10,7 +10,7 @@ updated: 2026-06-06
 tool: "bilibili-obsidian-notes 工作流 + 知识点增强脚本"
 status: 已增强
 source_type: 知识点增强
-word_count: 660
+word_count: 875
 ---
 
 # P43 7-3窗函数法设计FIR滤波器改
@@ -81,6 +81,14 @@ $$h(n)=h_d(n)w(n),\quad 0\le n\le N-1$$
 - 会写理想低通 $h_d(n)$
 - 吉布斯现象成因与缓解
 
+### 8. 窗长估算
+
+过渡带宽度 $\Delta\omega\approx C/N$（$C$ 取决于窗：矩形 $0.9\cdot2\pi$，汉宁 $3.1\cdot2\pi$，汉明 $3.3\cdot2\pi$）。给定 $\Delta\omega$ 反求 $N$，再算 $h_d(n)w(n)$。
+
+### 9. Kaiser 窗简述
+
+可调参数 $\beta$ 控制旁瓣与主瓣权衡，比固定窗更灵活；公式 $\beta=f(A_s)$ 可查表。工程常用，考试以汉宁/汉明为主。
+
 ## 关键术语
 
 | 术语 | 说明 |
@@ -98,7 +106,7 @@ $$h(n)=h_d(n)w(n),\quad 0\le n\le N-1$$
 
 - ✅ B 站官方标题、简介、分 P 元数据（`api.bilibili.com`，见 `Tools/BV127411M7BU-full.json`）
 - ✅ 分 P 首帧封面（`Tools/bili-fetch/fetch-bilibili.js`）
-- ✅ **知识点增强**：西电教材大纲实质内容（约 660 字，2026-06-06）
+- ✅ **知识点增强**：西电教材大纲实质内容（约 875 字，2026-06-06）
 - ⏳ 逐字转写：B 站 API 无外挂字幕轨（内嵌配音字幕）；可选 Whisper/BiliNote 后续补充
 
 ## 关键截图
