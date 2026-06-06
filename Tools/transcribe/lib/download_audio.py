@@ -84,22 +84,29 @@ def download_audio(
         if bbdown:
             tmp = out_dir / f"{stem}_bbdown"
             tmp.mkdir(parents=True, exist_ok=True)
+            page_url = f"https://www.bilibili.com/video/{bvid}"
             cmd = [
                 str(bbdown),
-                video_url,
+                page_url,
                 "--audio-only",
-                "--encoding-priority",
-                "aac",
-                "-oa",
-                str(tmp),
-                "-o",
-                f"{stem}.%(ext)s",
+                "-e", "aac",
+                "-p", str(part),
+                "--work-dir", str(tmp),
+                "-F", stem,
             ]
+            if ffmpeg:
+                cmd.extend(["--ffmpeg-path", ffmpeg])
             proc = _run(cmd)
             if proc.returncode == 0:
+                candidates = []
                 for ext in (".m4a", ".aac", ".mp3", ".flac", ".wav"):
-                    src = tmp / f"{stem}{ext}"
-                    if src.exists():
+                    candidates.extend(tmp.rglob(f"*{ext}"))
+                    flat = tmp / f"{stem}{ext}"
+                    if flat.exists():
+                        candidates.append(flat)
+                candidates.sort(key=lambda f: f.stat().st_size, reverse=True)
+                for src in candidates:
+                    if src.stat().st_size > 1000:
                         return _to_wav(src, wav_path, ffmpeg), "bbdown"
             err = (proc.stderr or proc.stdout or "BBDown 失败").strip()[-500:]
 
