@@ -8,6 +8,8 @@ Tools/**/*.exe
 Downloads/Obsidian-*.exe
 Downloads/*.exe
 Downloads/*.zip
+Downloads/gh_extract/
+Downloads/gh_windows_amd64.zip
 
 # Tool caches and ML models
 Tools/**/cache/
