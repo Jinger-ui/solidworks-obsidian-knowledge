@@ -10,12 +10,12 @@
   "total_duration_fmt": "555分19秒",
   "stat": {
     "aid": 91262190,
-    "view": 5084799,
+    "view": 5084837,
     "danmaku": 42373,
     "reply": 5637,
     "favorite": 139926,
     "coin": 75019,
-    "share": 35281,
+    "share": 35282,
     "now_rank": 0,
     "his_rank": 0,
     "like": 80521,
@@ -219,7 +219,7 @@
     {
       "page": 17,
       "cid": 358864191,
-      "part": "2-5-2z��变换2留数法",
+      "part": "2-5-2z反变换2留数法",
       "duration_sec": 652,
       "duration_fmt": "10分52秒",
       "cover_local": "BV127411M7BU-P17-cover.jpg",
@@ -531,6 +531,6 @@
       "subtitles": []
     }
   ],
-  "fetched_at": "2026-06-06T10:05:51.710Z",
+  "fetched_at": "2026-06-06T10:28:13.979Z",
   "subtitle_status": "无外挂字幕轨（视频为内嵌配音字幕，API 返回空列表）"
 }
