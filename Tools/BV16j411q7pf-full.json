@@ -1,0 +1,78 @@
+{
+  "bvid": "BV16j411q7pf",
+  "aid": 447697290,
+  "title": "安全多方计算（MPC）—— 冯登国原院士",
+  "desc": "",
+  "up": "3cH0_Nu1L",
+  "up_mid": 87159996,
+  "pubdate": 1693007425,
+  "total_duration_sec": 19835,
+  "total_duration_fmt": "5h 30m 35s",
+  "stat": {
+    "season_id": 1663364,
+    "view": 11494,
+    "danmaku": 30,
+    "reply": 6,
+    "fav": 395,
+    "coin": 106,
+    "share": 81,
+    "now_rank": 0,
+    "his_rank": 0,
+    "like": 138,
+    "vt": 0,
+    "vv": 0
+  },
+  "tags": [
+    "人工智能",
+    "AI",
+    "编程",
+    "计算",
+    "MPC",
+    "计算机科学",
+    "安全",
+    "密码学",
+    "网络空间安全",
+    "热议日本排放核废水"
+  ],
+  "season": "安全多方计算（MPC）—— 冯登国原院士",
+  "parts": [
+    {
+      "page": 1,
+      "cid": 1247053492,
+      "bvid": "BV16j411q7pf",
+      "part": "Lecture 1 安全多方计算（MPC）的基本概念及基础组件 —— 冯登国院士",
+      "duration_sec": 5313,
+      "duration_fmt": "88分33秒",
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n230826sa33se5fqgpmo2z36n1ytyxgz_firsti.jpg",
+      "cover_local": "BV16j411q7pf-P01-cover.jpg",
+      "subtitle_count": 0,
+      "subtitles": []
+    },
+    {
+      "page": 2,
+      "cid": 1247053491,
+      "bvid": "BV1Z8411Q7Af",
+      "part": "Lecture 2 基于秘密分享方法的 MPC 协议 —— 冯登国院士",
+      "duration_sec": 7837,
+      "duration_fmt": "130分37秒",
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n230826sa2443twgj1xsixw280j9epc4_firsti.jpg",
+      "cover_local": "BV16j411q7pf-P02-cover.jpg",
+      "subtitle_count": 0,
+      "subtitles": []
+    },
+    {
+      "page": 3,
+      "cid": 1247053497,
+      "bvid": "BV1Y94y1z7Po",
+      "part": "Lecture 3 基于混淆电路方法的 MPC 协议 —— 冯登国院士",
+      "duration_sec": 6685,
+      "duration_fmt": "111分25秒",
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n230826sa25bkrjq8d99ptowedpl7eki_firsti.jpg",
+      "cover_local": "BV16j411q7pf-P03-cover.jpg",
+      "subtitle_count": 0,
+      "subtitles": []
+    }
+  ],
+  "fetched_at": "2026-06-07T07:50:13.596Z",
+  "subtitle_status": "无外挂字幕轨（视频为内嵌配音字幕，API 返回空列表）"
+}
