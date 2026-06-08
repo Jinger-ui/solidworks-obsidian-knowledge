@@ -3,7 +3,7 @@
 import re
 from pathlib import Path
 
-from whisper_run import Segment, parse_srt_text, segments_to_markdown
+from whisper_run import Segment, parse_srt_text
 
 
 TRANSCRIPT_HEADING = "## 逐字转写"
@@ -96,13 +96,106 @@ def _patch_frontmatter(fm_block, status, engine):
     return "\n".join(out)
 
 
+def _fmt_range_ts(sec):
+    total = int(sec)
+    hh, rem = divmod(total, 3600)
+    mm, ss = divmod(rem, 60)
+    if hh:
+        return "{:02d}:{:02d}:{:02d}".format(hh, mm, ss)
+    return "{:02d}:{:02d}".format(mm, ss)
+
+
+def _join_segment_texts(texts):
+    if not texts:
+        return ""
+    parts = [t.strip() for t in texts if t.strip()]
+    if not parts:
+        return ""
+    merged = parts[0]
+    end_punct = "。！？；：…"
+    for text in parts[1:]:
+        if merged and merged[-1] in end_punct:
+            merged += text
+        else:
+            merged += "，" + text
+    if merged and merged[-1] not in end_punct + "，、":
+        merged += "。"
+    return merged
+
+
+def _paragraph_title(first_text, max_len=15):
+    title = re.sub(r"\s+", "", first_text.strip())
+    if len(title) > max_len:
+        title = title[:max_len].rstrip("，。、；：")
+    return title or "转写片段"
+
+
+def format_transcript_paragraphs(
+    segments,
+    silence_gap_s=2.0,
+    max_duration_s=240,
+    max_chars=250,
+    min_chars=150,
+):
+    """Merge whisper segments into readable paragraphs with section timestamps."""
+    paragraphs = []
+    current = None
+
+    for seg in segments:
+        text = seg.text.strip()
+        if not text:
+            continue
+
+        if current is None:
+            current = {"start": seg.start_s, "end": seg.end_s, "texts": [text]}
+            continue
+
+        gap = seg.start_s - current["end"]
+        duration = seg.end_s - current["start"]
+        char_count = sum(len(t) for t in current["texts"]) + len(text)
+
+        should_break = gap > silence_gap_s
+        if not should_break and char_count >= min_chars:
+            should_break = duration > max_duration_s or char_count > max_chars
+
+        if should_break:
+            paragraphs.append(current)
+            current = {"start": seg.start_s, "end": seg.end_s, "texts": [text]}
+        else:
+            current["texts"].append(text)
+            current["end"] = seg.end_s
+
+    if current:
+        paragraphs.append(current)
+
+    lines = []
+    for para in paragraphs:
+        start_ts = _fmt_range_ts(para["start"])
+        end_ts = _fmt_range_ts(para["end"])
+        title = _paragraph_title(para["texts"][0])
+        body = _join_segment_texts(para["texts"])
+        lines.append("### [{} - {}] {}".format(start_ts, end_ts, title))
+        lines.append(body)
+        lines.append("")
+    return "\n".join(lines).rstrip()
+
+
+def read_note_engine(note_path):
+    text = note_path.read_text(encoding="utf-8")
+    fm, _ = _split_note(text)
+    for line in fm.splitlines():
+        if line.startswith("transcript_engine:"):
+            return line.split(":", 1)[1].strip()
+    return "whisper"
+
+
 def build_transcript_section(segments, engine, bvid, part):
     lines = [
         TRANSCRIPT_HEADING,
-        "> 状态：已转写 · 引擎：{} · {} P{:02d}".format(engine, bvid, part),
+        "> 引擎: {} | 状态: 已转写 | 格式: 段落化".format(engine),
         "",
     ]
-    lines.append(segments_to_markdown(segments).rstrip())
+    lines.append(format_transcript_paragraphs(segments).rstrip())
     return "\n".join(lines) + "\n"
 
 

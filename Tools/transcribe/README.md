@@ -41,6 +41,22 @@ Vault 笔记 frontmatter 会更新：
 - `transcript_status: 已转写|待转写|部分`
 - `transcript_engine: whisper|bilibili_api|bilinote|...`
 
+`## 逐字转写` 章节采用**段落化**格式（SRT/TXT 仍为逐句原始输出）：
+
+```markdown
+## 逐字转写
+
+> 引擎: whisper | 状态: 已转写 | 格式: 段落化
+
+### [00:00 - 05:32] 开场与政策背景
+大家好，今天我们讲……（多句合并为自然段落）
+
+### [05:32 - 12:18] 数据二十条解读
+……
+```
+
+段落合并规则：相邻句静音间隔 >2s、单段时长约 3–5 分钟、或累计约 150–300 字时分段；小标题为 `[起止时间] 首句摘要（约 15 字）`。
+
 ## 环境依赖
 
 ### 必需
@@ -80,8 +96,11 @@ python Tools/transcribe/transcribe.py check
 python Tools/transcribe/transcribe.py init-vault
 python Tools/transcribe/transcribe.py demo-merge --bvid BV1ser5BDESU --part 1
 python Tools/transcribe/transcribe.py run --bvid BV1ser5BDESU --parts 1-3 --engine auto
+python Tools/transcribe/transcribe.py remerge --bvid BV1ser5BDESU --parts 1-4
 python Tools/transcribe/transcribe.py run --bvid BV1ser5BDESU --part 1 --engine bilinote --import-path Downloads/transcripts/BV1ser5BDESU/bilinote/P01.md
 ```
+
+`remerge` 从已有 `Downloads/transcripts/{BV号}/Pxx.srt` 重新生成 Vault 中的段落化逐字转写，不重新跑 Whisper。
 
 ## 已支持课程
 

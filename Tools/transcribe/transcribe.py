@@ -21,13 +21,13 @@ from merge_to_vault import (  # noqa: E402
     merge_from_files,
     merge_transcript_to_note,
     parse_parts,
+    read_note_engine,
     replace_or_insert_section,
 )
 from whisper_run import (  # noqa: E402
     Segment,
     check_whisper_available,
     parse_srt_text,
-    segments_to_markdown,
     segments_to_srt,
     segments_to_txt,
     transcribe_audio,
@@ -248,6 +248,40 @@ def process_part(args, part):
     return True
 
 
+def cmd_remerge(args):
+    cfg = {**default_config(), **load_config(args.config)}
+    bvid = args.bvid
+    vault = Path(cfg["vault_dir"])
+    tdir = transcript_dir(cfg, bvid)
+    parts = parse_parts(args.parts)
+    if not parts:
+        print("请指定 --parts，如 1 或 1-4")
+        return 1
+
+    ok_any = False
+    for part in parts:
+        srt_path = tdir / f"P{part:02d}.srt"
+        if not srt_path.exists():
+            print(f"[SKIP] P{part:02d}: 未找到 {srt_path}")
+            continue
+        note = find_note_path(vault, bvid, part)
+        if not note:
+            print(f"[WARN] P{part:02d}: 未找到 Vault 笔记")
+            continue
+        engine = args.engine or read_note_engine(note)
+        merged = merge_from_files(
+            vault_dir=vault,
+            bvid=bvid,
+            part=part,
+            srt_path=srt_path,
+            engine=engine,
+        )
+        if merged:
+            print(f"[OK] P{part:02d} 已重新合并（段落化）: {merged}")
+            ok_any = True
+    return 0 if ok_any else 1
+
+
 def main():
     _utf8_stdio()
     parser = argparse.ArgumentParser(description="B 站视频逐字转写流水线")
@@ -272,6 +306,12 @@ def main():
     p_run.add_argument("--import-path", default="", help="BiliNote/外部 SRT 导入路径")
     p_run.set_defaults(func=None)
 
+    p_remerge = sub.add_parser("remerge", help="从已有 SRT/TXT 重新合并为段落化逐字转写")
+    p_remerge.add_argument("--bvid", required=True)
+    p_remerge.add_argument("--parts", default="1", help="如 1 或 1-5 或 1,3,5")
+    p_remerge.add_argument("--engine", default="", help="覆盖 frontmatter 中的引擎名")
+    p_remerge.set_defaults(func=cmd_remerge)
+
     args = parser.parse_args()
     if args.cmd == "check":
         return cmd_check(args)
@@ -279,6 +319,8 @@ def main():
         return cmd_init_vault(args)
     if args.cmd == "demo-merge":
         return cmd_demo_merge(args)
+    if args.cmd == "remerge":
+        return cmd_remerge(args)
     if args.cmd == "run":
         parts = parse_parts(args.parts)
         if not parts:
